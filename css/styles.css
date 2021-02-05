@@ -1,4 +1,252 @@
-h1 {
-  text-align: center;
-  color; orange
+body {
+margin: 0;
+padding: 0;
 }
+
+.seriousbg {
+  background: url(https://cdn.wallpapersafari.com/5/23/fzwFnG.jpg) no-repeat;
+  background-size: cover;
+}
+
+.funbg{
+  background: url(https://i.pinimg.com/originals/c0/c8/c0/c0c8c0f700208d65213b8611d64944c2.gif) no-repeat;
+  background-size: cover;
+ }
+
+.topbar {
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 40px;
+  background: rgba(200, 200, 200);
+  border-width: 0 0 10px 0;
+  border-style: solid;
+  border-image: linear-gradient(rgb(192, 192, 192, 0.7), rgb(128, 128, 128, 0.7)) 1;
+}
+
+.topbar button:hover{
+  background-color: black;
+  color: white;
+}
+
+.topbarfun {
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 40px;
+   animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+  border-width: 0 0 10px 0;
+  border-style: solid;
+  border-image: linear-gradient(rgb(192, 192, 192, 0.5), rgb(128, 128, 128, 0.5)) 1;
+}
+
+.leftbutton{
+  padding: 5px;
+  margin: 5px;
+  float: left;
+}
+.rightbutton{
+  padding: 5px;
+  margin: 5px;
+  float: right;
+}
+.middlebutton{
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+
+}
+
+.boxlinks {
+  width: 500px;
+  height: 650px;
+  background: rgba(200, 200, 200, 0.45);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 90px;
+  color: white;
+  font-family: sans-serif;
+  border: 10px solid;
+  border-image: linear-gradient(rgb(192, 192, 192, 0.7), rgb(128, 128, 128, 0.7)) 1;
+}
+.boxlinks img{
+    border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 10px solid grey;
+}
+.boxlinks h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.boxlinks h5{
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.boxlinks p{
+  text-align: justify;
+}
+.boxlinks a{
+   text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.boxlinks a:hover {
+  color: #1f1f1f;
+}
+
+.boxlinksfun {
+  width: 500px;
+  height: 650px;
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 90px;
+  color: white;
+  font-family: sans-serif;
+  border: 10px solid;
+  border-image: linear-gradient(rgb(192, 192, 192, 0.5), rgb(128, 128, 128, 0.5)) 1;
+}
+
+.boxlinksfun img{
+    border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 10px solid rainbow;
+  animation: spin 15s linear infinite;
+
+}
+.boxlinksfun h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  animation: spin 15s linear infinite;
+}
+.boxlinksfun h5{
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 100;
+    animation: spin 15s linear infinite;
+}
+.boxlinksfun p{
+  text-align: justify;
+    animation: spin 15s linear infinite;
+
+}
+
+.boxlinksfun a{
+   text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.boxlinksfun a:hover {
+  color: #1f1f1f;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rainbow {
+        100%,0%{
+            background-color: rgb(255, 0, 0);
+        }
+        8%{
+            background-color: rgb(255, 127, 0);
+        }
+        16%{
+            background-color: rgb(255, 55, 0);
+        }
+        25%{
+            background-color: rgb(127, 255, 0);
+        }
+        33%{
+            background-color: rgb(0, 255, 0);
+        }
+        41%{
+            background-color: rgb(0, 255, 127);
+        }
+        50%{
+            background-color: rgb(0, 255, 255);
+        }
+        58%{
+            background-color: rgb(0, 127, 255);
+        }
+        66%{
+            background-color: rgb(0, 0, 255);
+        }
+        75%{
+            background-color: rgb(127, 0, 255);
+        }
+        83%{
+            background-color: rgb(255, 0, 255);
+        }
+        91%{
+            background-color: rgb(255, 0, 127);
+        }
+}
+
+/*Tutorial for the dynamic rainbow effects utilized this tutorial: https://codepen.io/zak/pen/rWJzPy
+*/
+
+/*I had a friend help me figure out keyframes and how to utilize them*/
+
+.jqueryser {
+  width: 500px;
+  height: 200px;
+  background: rgba(200, 200, 200, 0.45);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  color: white;
+  font-family: sans-serif;
+  border: 10px solid;
+  border-image: linear-gradient(rgb(192, 192, 192, 0.7), rgb(128, 128, 128, 0.7)) 1;
+}
+
+.jqueryfun {
+  width: 500px;
+  height: 200px;
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  color: white;
+  font-family: sans-serif;
+  border: 10px solid;
+  border-image: linear-gradient(rgb(192, 192, 192, 0.7), rgb(128, 128, 128, 0.7)) 1;
+}
+
+.qandabut{
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+/* Tutorial used for part of the layout: https://www.darkcode.info/2017/06/creating-simple-personal-website-using.html */
