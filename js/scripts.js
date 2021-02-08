@@ -23,14 +23,14 @@ $('#questions').addClass('jqueryser')
 /* These functions are just meant to replace different classes with fun ones to vary a bacground with different fun elements*/
 
 var bage = document.getElementById("qandabut");
-bage.onclick = baget;
+bage.onclick = tips;
 
 function answer( response ) {
 if(response==22){return"You're right! I'm 22"}
 else{return "Try Again "}
 }
 
-function baget (){
+function tips (){
 var response = parseInt(document.getElementById("age").value);
 var final = answer( response );
 
